@@ -1,1 +1,1 @@
-export const key = '<KEY>'
+export const key = 'Enter your azure key'

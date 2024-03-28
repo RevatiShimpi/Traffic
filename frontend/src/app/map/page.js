@@ -22,11 +22,11 @@ const TrafficOptionsExample= () => {
     incidents: true,
     flow: 'absolute',
   });
+
   return (
-    <div >
-     
+    <div style={{ padding: '20px' }}>     
       <div >
-        <button
+        <button 
           size="small"
           variant="contained"
           color="secondary"
@@ -36,7 +36,7 @@ const TrafficOptionsExample= () => {
         >
           Flow: Relative Traffic
         </button>
-        <button
+        {/* <button
           size="small"
           variant="contained"
           color="secondary"
@@ -45,18 +45,9 @@ const TrafficOptionsExample= () => {
           }}
         >
           Flow: Relative-delay
-        </button>
-        <button
-          size="small"
-          variant="contained"
-          color="secondary"
-          onClick={() => {
-            setTrafficOptions((value) => ({ ...value, flow: 'absolute' }));
-          }}
-        >
-          Flow: Absolute
-        </button>
-        <button
+        </button> */}
+        
+        {/* <button
           size="small"
           variant="contained"
           color="secondary"
@@ -65,7 +56,7 @@ const TrafficOptionsExample= () => {
           }}
         >
           Flow: None
-        </button>
+        </button> */}
       </div>
       <div >
         <button
@@ -95,6 +86,8 @@ const TrafficOptionsExample= () => {
         </div>
       </AzureMapsProvider>
     </div>
+    
+
   );
 };
 
